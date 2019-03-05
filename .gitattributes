@@ -1,0 +1,18 @@
+# these filters run when moving data between the repository and the workspace.
+* text=auto eol=lf
+
+# prevent the filter from running on binary files known to exist in the repository.
+*.eot -text diff
+*.idx -text diff
+*.jpg -text diff
+*.pack -text diff
+*.png -text diff
+*.svg -text diff
+*.svntmp -text diff
+*.ttf -text diff
+*.woff -text diff
+*.xls -text diff
+*.xlsx -text diff
+
+# per Pierre Doucet / OTF used by Google.
+*.otf -text diff

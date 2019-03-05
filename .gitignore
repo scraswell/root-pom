@@ -1,0 +1,69 @@
+# .gitignore template
+
+# excludes any .gitignore files found below the root of the repository.
+**/.gitignore
+!.gitignore
+
+# excludes svn folder
+**/.svn/
+
+# eclipse specific items
+**/.recommenders/
+**/.settings/
+**/.apt_generated/
+**/.metadata/
+**/.project
+**/.classpath
+**/.factorypath
+
+# intellij specific items
+**/*.iml
+**/*.idea
+
+# vscode specific items
+**/.vscode/
+
+# don't include class files
+**/*.class
+
+# don't include jar/ear/war files
+**/*.jar
+**/*.ear
+**/*.war
+
+# don't include commonly used archives
+**/*.tar.bz2
+**/*.tar.gz
+**/*.zip
+
+# don't include common build output directories
+**/target/
+**/out/
+**/bin/*
+!**/pgm/job/java/bin/*.sh
+
+# exclude jrebel xml files
+**/*rebel.xml
+
+# exclude log files
+**/*.log*
+
+# atomikos specific files
+**/tmlog*.log
+**/tmlog.lck
+
+# vim swap files
+**/*.swp
+
+# windows Thumbnail cache
+**/Thumbs.db
+
+# generated pom
+**/dependency-reduced-pom.xml
+/maax-blaze/code/blaze/src
+
+# sonar
+**/medavie-sonarlint-reports
+
+# corba logs
+**/orbtrc*.txt
